@@ -14,7 +14,7 @@ def pickToon(toons):
     for toon in toons:
         if toons[toon] == select:
             print(select + " FTW! \n")
-            break #skips over the else statement
+            break # :skips over the else statement
         #   pass #does nothing
         #   continue #skip this loop and move to the next
         else:
@@ -47,8 +47,13 @@ startGame()
 def add(a, b):
     return a + b
 
+#print statement is only for us humans to see. The computer does not doing anything with the value inside parameter of the print function 
+# return statement returns the value after a function has been executed
+
 myNumber = add(5, 9)
-print(myNumber)
+print(myNumber) # they return the same value, just less code.
+print(add(5,9))
+
 
 # A Python function will always have a return value. There is no notion of procedure or routine in Python. So, if you don’t explicitly use a return value in a return statement, or if you totally omit the return statement, then Python will implicitly return a default value for you. That default return value will always be None.
 

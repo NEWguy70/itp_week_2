@@ -4,8 +4,8 @@
 
 #Use the "def" keyword to define (create) a new function.  Give the function a name, followed by single braces, and a colon.  Indent the following line to run the code in the function body.  The following code will create a function named myNewFunction, and it will print the words "Hello World"
 
-def my_old_function():
-    print("Hello")
+def my_old_function(name):
+    print("Hello "+name)
 
 # "Call" the function to run the code by adding single braces after the name of the function.
 

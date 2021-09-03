@@ -13,11 +13,19 @@ inventory = {
 # SCENARIO: A person came in and bought one of everything!
 
 for item in inventory:
+    inventory[item]-=1
+    print("Total "+ item + " available : "+ str(inventory[item]))
+   
     # decrement item by using an assignment operator (Day 2 Lecture line #130)
 
     # NOTE: recall that item represents the key of the key:value pair
 
 # SCENARIO: REMOVE ANY 0 ITEMS
 
-for item in inventory:
+for item in list(inventory):
+    if inventory[item]==0:
+        inventory.pop(item)
+print(inventory)
+
     # use an if statement to check if the value is 0 and then remove it
+    #In python 3, you can not change the dictionary while looping throught it
